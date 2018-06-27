@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <EditText
+        android:id="@+id/et_query"
+        android:hint="Enter message"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:text="Kittens"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+    <Button
+        android:id="@+id/btnSearch"
+        android:text="Search"
+        android:layout_below="@id/et_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Results"
+        android:layout_below="@+id/btnSearch"
+        android:textSize="35sp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reyclerview_message_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvResults"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
